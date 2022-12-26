@@ -20,6 +20,7 @@ string[] SortElement(string[] array)
             newArr[count] = array[i];
             count++;
         }
+    if (count == 0) Console.WriteLine("Нет элементов с 3 и менее символами");
     return newArr;
 }
 string[] FillArray()
@@ -44,5 +45,5 @@ string[] incomingArr = FillArray();
 Console.Clear();
 Console.WriteLine("Заданный массив: ");
 PrintArray(incomingArr);
-Console.WriteLine("Получивщийся массив c элементами менее или равно 3 символам: ");
+Console.WriteLine("Получивщийся массив c элементами в 3 и менее символов: ");
 PrintArray(SortElement(incomingArr));
